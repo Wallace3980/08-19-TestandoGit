@@ -31,7 +31,7 @@ const stylesLinkImportantes = StyleSheet.create({
         justifyContent: "space-between",
         paddingHorizontal: 40,
         paddingVertical: 10,
-        
+
         borderColor: "red",
         borderBottomWidth: 1,
 
@@ -59,7 +59,7 @@ const Home = () => {
                     <Image source={
                         require("../../assets/pesquisar.png")}>
                     </Image>
-                    
+
                     <TextInput 
                         placeholder="Search"
                         placeholderTextColor="#F5FFFF"
