@@ -1,13 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { Text, View, Image, TextInput } from 'react-native';
+import { Text, View, Image, TextInput, TouchableOpacity } from 'react-native';
 import { stylesLink, stylesLinkImportantes, styles } from './styles';
+import { useNavigation } from '@react-navigation/native';
+import {NativeStackNavigationProp} from '@react-navigation/native-stack';
+import { StackNagationParaList } from '../../../types';
 
 const LinkItem = (props:any)=>{
     return(
         <Text style={stylesLink.text}>{props.name}</Text>
     );
 };
+
 const LinksImportantes = ()=>{
     return(
         <View style={stylesLinkImportantes.container}> 
@@ -19,7 +23,17 @@ const LinksImportantes = ()=>{
         </View>
     );
 };
+
+type HomeProps = NativeStackNavigationProp<StackNagationParaList, "Home">;
+
 const Home = () => {
+
+    const navigation = useNavigation<HomeProps>();
+
+    function irParaTelaLogin(){
+        navigation.navigate('Login');
+    };
+
     return(
         <View style={styles.container}>
             <View style={styles.header}>
@@ -46,6 +60,12 @@ const Home = () => {
 
             <LinksImportantes />
             <StatusBar style="auto" />
+
+            <View style={styles.final}>
+                <TouchableOpacity style={styles.botao} onPress={irParaTelaLogin}>
+                    <Text style={{color: "#F5FFFF"}}>ado ado ado</Text>
+                </TouchableOpacity>
+            </View>
         </View>
     );
 }

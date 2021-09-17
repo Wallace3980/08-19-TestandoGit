@@ -16,8 +16,8 @@ export const stylesLinkImportantes = StyleSheet.create({
         paddingHorizontal: 40,
         paddingVertical: 10,
 
-        borderColor: "red",
-        borderBottomWidth: 1,
+        //borderColor: "red",
+        //borderBottomWidth: 1,
 
         /*shadowColor: "#000",
         shadowOffset: {
@@ -57,5 +57,18 @@ export const styles = StyleSheet.create({
         // maxWidth: 170,
         flex: 1,
         paddingRight: 20,
+    },
+    botao:{
+        backgroundColor: "#4369B0",
+        height: 40,
+        alignItems: "center",
+        justifyContent: "center",
+        marginHorizontal: 40,
+        borderRadius: 15,
+    },
+    final:{
+        flex: 1,
+        justifyContent: "flex-end",
+        paddingVertical: 40, 
     },
 });
