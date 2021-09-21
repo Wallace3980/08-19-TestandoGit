@@ -63,7 +63,7 @@ const Home = () => {
 
             <View style={styles.final}>
                 <TouchableOpacity style={styles.botao} onPress={irParaTelaLogin}>
-                    <Text style={{color: "#F5FFFF"}}>ado ado ado</Text>
+                    <Text style={{color: "#F5FFFF"}}>Logout</Text>
                 </TouchableOpacity>
             </View>
         </View>
