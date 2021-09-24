@@ -53,10 +53,9 @@ const Home = () => {
                         style={styles.textInput}>
                     </TextInput>
                 </View>
-
-                <Image source={
-                    require("../../assets/compartilhar.png")}>
-                </Image>
+                    <Image source={
+                        require("../../assets/compartilhar.png")}>
+                    </Image>
             </View>
 
             <LinksImportantes />

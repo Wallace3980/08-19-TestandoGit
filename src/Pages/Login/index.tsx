@@ -24,7 +24,8 @@ const Login = () => {
                 </Image>
                 <Text style={{fontSize: 42.11,
                             color: "white",
-                            marginRight: 70}}>
+                            marginRight: 70,
+                            fontWeight:'bold',}}>
                             Facebook
                 </Text>
             </View>
