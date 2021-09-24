@@ -3,8 +3,9 @@ import React from 'react';
 import { Text, View, Image, TextInput, TouchableOpacity } from 'react-native';
 import { stylesLink, stylesLinkImportantes, styles } from './styles';
 import { useNavigation } from '@react-navigation/native';
-import {NativeStackNavigationProp} from '@react-navigation/native-stack';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { StackNagationParaList } from '../../../types';
+import { Post } from "../Post"
 
 const LinkItem = (props:any)=>{
     return(
@@ -60,6 +61,8 @@ const Home = () => {
 
             <LinksImportantes />
             <StatusBar style="auto" />
+
+            <Post/>
 
             <View style={styles.final}>
                 <TouchableOpacity style={styles.botao} onPress={irParaTelaLogin}>
