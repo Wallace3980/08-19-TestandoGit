@@ -44,4 +44,16 @@ export const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-around',
     },
+    footerpost:{
+        height: 43,
+        marginTop: 20,
+        flexDirection: 'row',
+    },
+    learnmore:{
+        width: 170,
+        backgroundColor: '#3D7BE2',
+        height: 43,
+        borderRadius: 10,
+        justifyContent: "center",
+    },
 });

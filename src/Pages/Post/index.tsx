@@ -42,6 +42,15 @@ export const Post = () => {
             <Image source={require('../../assets/miniCompartilhar.png')} style={{height: 18, width:18,}}/>
             <Text> Compartilhar </Text>
         </View>
+        <View style={styles.footerpost}>
+            <View style={styles.learnmore}>
+                <Text style={{color: 'white', textAlign: "center", fontSize: 15}}>
+                    Learn More
+                </Text>
+            </View>
+            <Image source={require('../../assets/mensergem.png')} style={{borderRadius: 10, marginLeft: 10, width: 54}}/>
+            <Image source={require('../../assets/3.png')} style={{borderRadius: 10, marginLeft: 10,}}/>
+        </View>
     </View>
     );
 };

@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { Text, View, Image, TextInput, TouchableOpacity } from 'react-native';
+import { Text, View, Image, TextInput, TouchableOpacity, ScrollView } from 'react-native';
 import { stylesLink, stylesLinkImportantes, styles } from './styles';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
@@ -12,7 +12,6 @@ const LinkItem = (props:any)=>{
         <Text style={stylesLink.text}>{props.name}</Text>
     );
 };
-
 const LinksImportantes = ()=>{
     return(
         <View style={stylesLinkImportantes.container}> 
@@ -28,25 +27,20 @@ const LinksImportantes = ()=>{
 type HomeProps = NativeStackNavigationProp<StackNagationParaList, "Home">;
 
 const Home = () => {
-
     const navigation = useNavigation<HomeProps>();
-
     function irParaTelaLogin(){
         navigation.navigate('Login');
     };
-
     return(
         <View style={styles.container}>
             <View style={styles.header}>
                 <Image source={
                     require("../../assets/seta.png")}>
                 </Image>
-
                 <View style={styles.inputTextView}>
                     <Image source={
                         require("../../assets/pesquisar.png")}>
                     </Image>
-
                     <TextInput 
                         placeholder="Search"
                         placeholderTextColor="#F5FFFF"
@@ -57,17 +51,16 @@ const Home = () => {
                         require("../../assets/compartilhar.png")}>
                     </Image>
             </View>
-
             <LinksImportantes />
             <StatusBar style="auto" />
-
-            <Post/>
-
-            <View style={styles.final}>
+            <ScrollView>
+                <Post/> 
+            </ScrollView>
+            {/*<View style={styles.final}>
                 <TouchableOpacity style={styles.botao} onPress={irParaTelaLogin}>
                     <Text style={{color: "#F5FFFF"}}>Logout</Text>
                 </TouchableOpacity>
-            </View>
+            </View>*/}
         </View>
     );
 }

@@ -1,6 +1,5 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { Text, View, Image, TextInput, TouchableOpacity, TouchableOpacityBase } from 'react-native';
+import { Text, View, Image, TextInput, TouchableOpacity } from 'react-native';
 import { styles } from './styles';
 import { useNavigation } from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
