@@ -2,6 +2,8 @@ import React from "react";
 import { View, Text, Image, Touchable } from "react-native";
 import { styles } from "./styles";
 
+//"Tarefa Commit finalização da tela de Home"
+
 export const Post = () => {
     return (
     <View style={styles.container}> 
